@@ -253,6 +253,58 @@ body {
   background: #000;
 }
 
+/* Container para os 3 projetos principais */
+.projetos-destaque {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Deixa os cards de destaque levemente mais imponentes */
+.card-destaque {
+  border: 1px solid rgba(79, 70, 229, 0.4); /* Borda levemente puxada pro seu azul primário */
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.1);
+}
+.card-destaque:hover {
+  border-color: var(--secundaria);
+}
+
+/* Estrutura do Carrossel */
+.carrossel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden; /* Esconde o que passa do limite */
+  position: relative;
+}
+
+/* A faixa de rolagem */
+.projetos-carrossel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto; /* Permite rolar pro lado */
+  padding: 20px;
+  scroll-behavior: smooth;
+  /* Esconde a barra de rolagem em diferentes navegadores */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.projetos-carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Padroniza o tamanho dos cards no carrossel para não esmagarem */
+.projetos-carrossel .projetos-card {
+  flex: 0 0 320px; /* Largura fixa para os cards do carrossel */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contato {
   padding: 40px 20px;
   background-color: var(--maisEscuro);
