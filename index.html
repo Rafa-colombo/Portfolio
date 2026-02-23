@@ -157,25 +157,7 @@
 
   <div id="alerta-copy" class="alerta-copy">E-mail copiado!</div>
 
-  <script>
-    const emailLink = document.getElementById("email-link");
-    const alerta = document.getElementById("alerta-copy");
-  
-    emailLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      const email = "rafaelcolombomiranda@gmail.com";
-      
-      navigator.clipboard.writeText(email).then(() => {
-        // Mostra alerta
-        alerta.classList.add("show");
-  
-        // Esconde após 2 segundos
-        setTimeout(() => {
-          alerta.classList.remove("show");
-        }, 2000);
-      });
-    });
-  </script>
+  <script src="script.js"></script>
   
 </body>
 </html>
