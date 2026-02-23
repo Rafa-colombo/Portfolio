@@ -296,6 +296,71 @@ body {
   justify-content: space-between;
 }
 
+/* Container das competências */
+.competencias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card individual de competência */
+.competencia-item {
+    background: rgba(255, 255, 255, 0.05); /* Vidro mais sutil */
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vidro);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.competencia-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primaria);
+    transform: translateY(-5px);
+}
+
+.comp-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.comp-titulo {
+    color: var(--primaria);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.comp-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.comp-lista li {
+    font-size: 0.85rem;
+    color: var(--claro);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Pequeno ponto estilizado antes de cada item da lista */
+.comp-lista li::before {
+    content: "•";
+    color: var(--secundaria);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: 0;
+}
+
 .contato {
   padding: 40px 20px;
   background-color: var(--maisEscuro);
