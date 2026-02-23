@@ -1,7 +1,15 @@
 // ==========================================
-// 1. LÓGICA DO CARROSSEL DE PROJETOS
+// 1. LÓGICA DO CARROSSEL DE PROJETOS INFINITO
 // ==========================================
 const carrossel = document.getElementById('carrossel');
+
+// O GRANDE TRUQUE: Clonar os itens originais para o loop perfeito
+const projetos = Array.from(carrossel.children);
+projetos.forEach(projeto => {
+  const clone = projeto.cloneNode(true);
+  carrossel.appendChild(clone);
+});
+
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -10,10 +18,12 @@ let autoScrollInterval;
 function iniciarAutoScroll() {
   autoScrollInterval = setInterval(() => {
     carrossel.scrollLeft += 1; 
-    if (carrossel.scrollLeft >= (carrossel.scrollWidth - carrossel.clientWidth - 1)) {
+    
+    // Quando chegar exatamente na metade (onde os clones começam), reseta pro 0
+    if (carrossel.scrollLeft >= carrossel.scrollWidth / 2) {
       carrossel.scrollLeft = 0;
     }
-  }, 25); 
+  }, 25); // Velocidade (menor = mais rápido/fluido)
 }
 
 iniciarAutoScroll();
@@ -36,7 +46,6 @@ carrossel.addEventListener('mousemove', (e) => {
 });
 carrossel.addEventListener('touchstart', () => clearInterval(autoScrollInterval));
 carrossel.addEventListener('touchend', iniciarAutoScroll);
-
 
 // ==========================================
 // 2. LÓGICA DE COPIAR E-MAIL E ALERTA
