@@ -280,8 +280,8 @@ body {
   padding: 20px;
   scroll-behavior: smooth;
   /* Esconde a barra de rolagem em diferentes navegadores */
-  /*-ms-overflow-style: none;  
-  scrollbar-width: none;  */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .projetos-carrossel::-webkit-scrollbar {
