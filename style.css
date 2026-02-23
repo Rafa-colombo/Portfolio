@@ -296,6 +296,7 @@ body {
   justify-content: space-between;
 }
 
+/* Container das competências */
 .competencias-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -304,44 +305,72 @@ body {
 }
 
 .competencia-item {
-    background: rgba(255, 255, 255, 0.05); /* Fundo sutil */
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.comp-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    gap: 15px;
-}
-
-.comp-titulo {
-    font-size: 1.2rem;
-    color: #8257e6; /* Cor de destaque */
-    margin: 0;
+    position: relative;
 }
 
 .comp-lista {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .comp-lista li {
-    margin-bottom: 12px;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    color: #e1e1e6;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: help; /* Indica que há informação ao passar o mouse */
+    transition: background 0.3s ease;
+    position: relative;
 }
 
-.comp-lista li strong {
-    color: #ffffff;
-    display: block; /* Garante que o título da skill fique acima da descrição se o espaço for pouco */
-    margin-bottom: 2px;
+.comp-lista li:hover {
+    background: rgba(130, 87, 230, 0.1); /* Destaque sutil ao passar o mouse */
+}
+
+/* Estilização do Balão (Tooltip) */
+.comp-lista li::after {
+    content: attr(data-info); /* Puxa o texto do HTML */
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8257e6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Seta do balão */
+.comp-lista li::before {
+    content: '';
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #8257e6;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* Ativação do Hover */
+.comp-lista li:hover::after,
+.comp-lista li:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 110%; /* Sobe levemente ao aparecer */
 }
 
 .contato {
