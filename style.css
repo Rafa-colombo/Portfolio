@@ -195,15 +195,6 @@ body {
   font-size: 0.8rem;
 }
 
-.projetos-caixa {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem; /* corrigido '2rm' para '2rem' */
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 /* Cartões dos projetos */
 .projetos-card {
   background: rgba(255, 255, 255, 0.1);
