@@ -76,3 +76,24 @@ emailLink.addEventListener("click", (e) => {
     }, 2500); 
   });
 });
+
+// 3. LÓGICA DO ACCORDION DE CERTIFICAÇÕES
+// Seleciona apenas os headers que têm a funcionalidade de clique (ignora os standalones)
+const accordions = document.querySelectorAll('.accordion-header:not(.standalone)');
+
+accordions.forEach(acc => {
+  acc.addEventListener('click', function() {
+    // Alterna a classe active para girar a setinha
+    this.classList.toggle('active');
+    
+    // Pega a div do conteúdo logo abaixo do botão
+    const content = this.nextElementSibling;
+    
+    // Se já estiver aberto (com max-height), ele fecha. Se não, ele calcula a altura exata e abre.
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
