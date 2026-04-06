@@ -2,12 +2,18 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Rafael Colombo Miranda | Engenharia de Computação & DevOps</title>
+  <meta name="description" content="Portfólio de Rafael Colombo Miranda. Estudante de Engenharia de Computação, apaixonado por DevOps, Cloud Computing, Engenharia de Software e IA.">
+  <meta property="og:title" content="Rafael Colombo | Portfólio">
+  <meta property="og:description" content="Engenharia de Computação, DevOps, Cloud Computing e IA.">
+  <meta property="og:image" content="./img/DSC04186.png">
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
   <body>
-    <!--Contador de acessos "https://hits.sh/rafa-colombo.github.io/Portfolio.svg"!-->
     <img src="https://hits.sh/rafa-colombo/Portfolio.svg?style=flat-square&label=visitas" 
       alt="" aria-hidden="true" width="1" height="1" 
       style="position:absolute;left:-9999px;top:auto;overflow:hidden;border:0;">
@@ -16,229 +22,197 @@
     
     <nav class="navegacao">
       <ul class="menu">
-          <li>
-              <a href="#inicio" class="menu-link">Início</a>
-          </li>
-          <li>
-              <a href="#sobre" class="menu-link">Sobre</a>
-          </li>
-          <li>
-              <a href="#projetos" class="menu-link">Projetos</a>
-          </li>
-          <li>
-              <a href="#competencias" class="menu-link">Competências</a>
-          </li>
-          <li>
-              <a href="#contato" class="menu-link">Contato</a>
-          </li>
+          <li><a href="#inicio" class="menu-link">Início</a></li>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li><a href="#certificacoes" class="menu-link">Certificações</a></li>
+          <li><a href="#competencias" class="menu-link">Competências</a></li>
+          <li><a href="#contato" class="menu-link">Contato</a></li>
       </ul>  
     </nav>
   
-    <h1 class="titulo">Meu Portfólio</h1>
-    
     <main id="inicio" class="cabecalho">
-            <img src="./img/DSC04186.png" alt="Foto de Rafael" class="Foto-perfil">
+            <img src="./img/DSC04186.png" alt="Foto de Rafael" class="Foto-perfil" loading="lazy">
             <h1 class="eu">Rafael Colombo Miranda</h1>
-            <p class="ocupacao">Estudante Engenharia de Computação</p>
+            <p class="ocupacao">Engenharia de Computação | Cloud & DevOps</p>
   
             <div class="links-cabecalho">
-              <a href="https://www.linkedin.com/in/rafaelcolombomiranda" target="_blank" class="link-social linkedin">
+              <a href="https://www.linkedin.com/in/rafaelcolombomiranda" target="_blank" class="link-social linkedin" aria-label="Meu perfil no LinkedIn">
                 <i class="fa-brands fa-linkedin"></i> LinkedIn
               </a>
-              <a href="http://lattes.cnpq.br/4647141730491430" target="_blank" class="link-social lattes">
+              <a href="http://lattes.cnpq.br/4647141730491430" target="_blank" class="link-social lattes" aria-label="Meu currículo Lattes">
                 <i class="fa-solid fa-graduation-cap"></i> Lattes
               </a>
-              <a href="https://github.com/Rafa-colombo" target="_blank" class="link-social github">
+              <a href="https://github.com/Rafa-colombo" target="_blank" class="link-social github" aria-label="Meu perfil no GitHub">
                 <i class="fa-brands fa-github"></i> GitHub
               </a>
             </div>
-  
-  
     </main>
   
     <section id="sobre" class="layout-menu">
       <h2 class="titulos-menu">Sobre mim</h2>
       <div class="sobre-caixa">
           <p class="sobre-paragrafo">
-            Sou estudante de Engenharia da Computação na UTFPR, campus Toledo, apaixonado por tecnologia e inovação. 
-            Tenho interesse em desenvolvimento backend, automação, infraestrutura em nuvem, engenharia de software, ciência de dados e machine learning. 
-            Já participei de projetos de pesquisa envolvendo aprendizado de máquina e estatística aplicada, além de atuar como monitor em diversas disciplinas da graduação. 
-            Busco oportunidades para aprender, contribuir e aplicar meus conhecimentos em soluções tecnológicas criativas.
+            Sou estudante do 10º período de Engenharia da Computação na UTFPR, apaixonado por conectar a teoria acadêmica à aplicabilidade real do mercado. 
+            Tenho forte foco em <strong>DevOps, Infraestrutura em Nuvem e Engenharia de Software</strong>, buscando sempre automatizar entregas e garantir infraestruturas escaláveis. 
+            Em paralelo, desenvolvo pesquisas científicas (Iniciação Científica) aplicando Inteligência Artificial (Machine Learning e CNNs) e Estatística.
+            Busco desafios que me permitam unir a cultura ágil, o desenvolvimento robusto e as tecnologias de nuvem para criar soluções criativas e eficientes.
           </p>
       </div>
     </section>
   
-    <section id="projetos" class=""layout-menu>
-      <h2 class="titulos-menu">Projetos primários</h2>
-      
-       <div class="projetos-destaque">
+    <section id="projetos" class="layout-menu">
+      <h2 class="titulos-menu">Projetos em Destaque</h2>
+        <div class="projetos-destaque">
           
           <div class="projetos-card card-destaque">
-              <h3 class="titulo-projeto">Aplicações de Séries Geométricas Utilizando Programação em Python</h3>
+              <h3 class="titulo-projeto">Aplicações de Séries Geométricas (Python)</h3>
               <p class="info-projeto">
-                Aplicação de séries geométricas na análise do movimento de uma bola em queda livre e seus sucessivos quiques. Considera-se a convergência da série quando a razão é menor que 1, relacionando-a à perda de altura após cada impacto. 
-                Também são discutidos fatores como resistência do ar e coeficiente de restituição, que influenciam no comportamento do movimento. 
-                O objetivo principal foi desenvolver um software em Python capaz de calcular e representar graficamente as alturas e distâncias percorridas pela bola, permitindo analisar a influência da gravidade e de outros parâmetros físicos.<br>
-                Trabalho aprovado e publicado como resumo expandido nos anais do VI COBICET 2025, área temática MULT - Multidisciplinar.  
+                <span class="tag-projeto">Python</span> <span class="tag-projeto">Simulação</span> <span class="tag-projeto">Física</span><br><br>
+                Software em Python capaz de calcular e representar graficamente o movimento de uma bola em queda livre usando séries geométricas. Avalia influência da gravidade, resistência do ar e coeficiente de restituição.<br>
+                <em>Trabalho aprovado e publicado no VI COBICET 2025.</em>  
               </p>
               <div class="botoes-projeto">
-                <a href="https://github.com/Rafa-colombo/APLICACOES-DE-SERIES-GEOMETRICAS" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                <a href="https://www.even3.com.br/anais/congresso-brasileiro-interdisciplinar-ciencia-tecnologia/1198816-aplicacoes-de-series-geometricas-utilizando-programacao-em-python" target="_blank" class="projeto-btn">🌐 Página do Trabalho</a>
+                <a href="https://github.com/Rafa-colombo/APLICACOES-DE-SERIES-GEOMETRICAS" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.even3.com.br/anais/congresso-brasileiro-interdisciplinar-ciencia-tecnologia/1198816-aplicacoes-de-series-geometricas-utilizando-programacao-em-python" target="_blank" class="projeto-btn"><i class="fa-solid fa-globe"></i> Publicação</a>
               </div>
           </div>
   
           <div class="projetos-card card-destaque">
-              <h3 class="titulo-projeto">IC - Novas Tecnologias Para O Aprendizado De Máquina E Lógica Computacional</h3>
+              <h3 class="titulo-projeto">IC - Reconhecimento de Emoções via CNNs</h3>
               <p class="info-projeto">
-                Aplicação de Redes Neurais Convolucionais (CNNs) no reconhecimento automático de emoções humanas em tempo real. 
-                Considera-se a complexidade inerente às expressões faciais, que variam conforme características individuais, contexto e intensidade, superando a análise puramente subjetiva. 
-                Também são discutidas as aplicações práticas no monitoramento, onde a detecção precoce de alterações comportamentais influencia na prevenção de riscos e no apoio pedagógico e de segurança. 
-                O objetivo principal é projetar um sistema capaz de classificar emoções básicas, permitindo analisar o comportamento e auxiliar em situações críticas.
+                <span class="tag-projeto">Deep Learning</span> <span class="tag-projeto">Visão Computacional</span> <span class="tag-projeto">IA</span><br><br>
+                Projeto de Iniciação Científica focada na aplicação de Redes Neurais Convolucionais (CNNs) para o reconhecimento automático de emoções humanas em tempo real, visando aplicações em monitoramento, segurança e apoio pedagógico.
               </p>
               <div class="botoes-projeto">
-                <a href="https://github.com/Rafa-colombo/IC" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                <a href="#" class="projeto-btn" onclick="return false;">🚧 Em desenvolvimento</a>
+                <a href="https://github.com/Rafa-colombo/IC" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <span class="projeto-btn status-dev">🚧 Em desenvolvimento</span>
               </div>
           </div>
   
           <div class="projetos-card card-destaque">
-              <h3 class="titulo-projeto">IC - Desenvolvimento e Aplicação de Técnicas de Geoestatística Utilizando Python</h3>
+              <h3 class="titulo-projeto">Biblioteca de Geoestatística (Python)</h3>
               <p class="info-projeto">
-                O projeto visa o desenvolvimento e a aplicação de técnicas de Geoestatística na linguagem de programação Python. 
-                A iniciativa consiste em traduzir algoritmos geoestatísticos de um trabalho de doutorado para o Python e organizá-los em uma nova biblioteca de código aberto. 
-                O objetivo é criar uma ferramenta robusta e acessível para a análise e simulação de dados espaciais, contribuindo para a pesquisa científica em diversas áreas como geologia, agronomia e ciências ambientais.
+                <span class="tag-projeto">Python</span> <span class="tag-projeto">Ciência de Dados</span> <span class="tag-projeto">Open Source</span><br><br>
+                Desenvolvimento de uma biblioteca de código aberto traduzindo algoritmos geoestatísticos complexos (originários de uma tese de doutorado) para Python. Uma ferramenta robusta para simulação de dados espaciais.
               </p>
               <div class="botoes-projeto">
-                <a href="https://github.com/Rafa-colombo/Geoestatistics" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                <a href="#" class="projeto-btn" onclick="return false;">🚧 Em desenvolvimento</a>
+                <a href="https://github.com/Rafa-colombo/Geoestatistics" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <span class="projeto-btn status-dev">🚧 Em desenvolvimento</span>
               </div>
           </div>
-  
       </div>
   
-          <h2 class="titulos-menu" style="margin-top: 4rem;">Projetos secundários</h2>
+      <h2 class="titulos-menu" style="margin-top: 4rem;">Outros Projetos</h2>
   
       <div class="carrossel-container">
           <div class="projetos-carrossel" id="carrossel">
-              
+              <div class="projetos-card">
+                  <h3 class="titulo-projeto">MeuAtleta</h3>
+                  <p class="info-projeto">Plataforma web mobile-first para gestão de academias e associações esportivas, com controle hierárquico de usuários e recursos gerenciais.</p>
+                  <div class="botoes-projeto">
+                    <a href="#" class="projeto-btn"><i class="fa-solid fa-lock"></i> Privado/WIP</a>
+                  </div>
+              </div>
+
               <div class="projetos-card">
                   <h3 class="titulo-projeto">PIR Land</h3>
-                  <p class="info-projeto">Desenvolvimento de um jogo RPG multiplayer com foco em evolução de personagens e combate PVP online via sockets em Python.</p>
+                  <p class="info-projeto">Jogo RPG multiplayer focado em evolução de personagens e combate online PVP via arquitetura de sockets distribuídos em Python.</p>
                   <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/PIR-Land" target="_blank" class="projeto-btn">🐙 GitHub</a>
+                    <a href="https://github.com/Rafa-colombo/PIR-Land" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
                   </div>
               </div>
   
               <div class="projetos-card">
                   <h3 class="titulo-projeto">Compilador Pirata</h3>
-                  <p class="info-projeto">Construção de uma linguagem de programação esotérica baseada na topologia e no vocabulário de dialetos piratas usando C/C++ (Flex e Bison).</p>
+                  <p class="info-projeto">Linguagem de programação esotérica baseada no vocabulário pirata, construída do zero utilizando autômatos com Flex e Bison (C/C++).</p>
                   <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/Compila_Pirata" target="_blank" class="projeto-btn">🐙 GitHub</a>
+                    <a href="https://github.com/Rafa-colombo/Compila_Pirata" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
                   </div>
               </div>
   
               <div class="projetos-card">
-                  <h3 class="titulo-projeto">Mapa Interativo de Terremotos</h3>
-                  <p class="info-projeto">Aplicação interativa de visualização geoespacial em Java utilizando a biblioteca Unfolding Maps para filtragem espacial.</p>
+                  <h3 class="titulo-projeto">Emotion Detection AI Web</h3>
+                  <p class="info-projeto">Aplicação full-stack utilizando Flask e a API IBM Watson para análise de sentimentos em tempo real, com Unit Testing rigoroso.</p>
                   <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/MapeamentoIterativoJava" target="_blank" class="projeto-btn">🐙 GitHub</a>
+                    <a href="https://github.com/Rafa-colombo/projeto-final-IBM-AIFLask" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
                   </div>
               </div>
-  
+
               <div class="projetos-card">
-                  <h3 class="titulo-projeto">Jogo FlappyBird em Python</h3>
-                  <p class="info-projeto">Implementação do clássico jogo Flappy Bird em Python (Pygame) com texturas customizadas e temática da UTFPR.</p>
+                  <h3 class="titulo-projeto">Gestor de Biblioteca Pessoal</h3>
+                  <p class="info-projeto">Sistema Desktop CRUD completo desenvolvido em Python (Tkinter + SQLite3) para gestão de acervo literário com buscas em tempo real.</p>
                   <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/FlappyBird" target="_blank" class="projeto-btn">🐙 GitHub</a>
+                      <a href="https://github.com/Rafa-colombo/personal-library-manager" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
                   </div>
               </div>
-
-            <div class="projetos-card">
-                <h3 class="titulo-projeto">Minha Biblioteca Pessoal (Python)</h3>
-                <p class="info-projeto">
-                    Aplicativo desktop desenvolvido em Python utilizando Tkinter e SQLite3. O sistema gerencia uma biblioteca pessoal com funcionalidades completas de CRUD, busca em tempo real, ordenação de dados e sistema de abas dinâmicas.</p>
-                <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/personal-library-manager" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                </div>
-            </div>
-
-            <div class="projetos-card">
-                <h3 class="titulo-projeto">Emotion Detection AI</h3>
-                <p class="info-projeto">Aplicação Web full-stack integrada à API Watson da IBM para análise de sentimentos em tempo real, utilizando Flask e práticas avançadas de tratamento de erros e Unit Testing.</p>
-                <div class="botoes-projeto">
-                    <a href="https://github.com/Rafa-colombo/projeto-final-IBM-AIFLask" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                </div>
-            </div>
-            
-            <div class="projetos-card">
-                <h3 class="titulo-projeto">Sistema de Cadastros com Árvore Trie (C)</h3>
-                <p class="info-projeto">
-                  Projeto acadêmico em C focado na implementação de uma Árvore de Prefixos (Trie) para gerenciar um sistema de cadastros.
-                </p>
-                <div class="botoes-projeto">
-                  <a href="https://github.com/Rafa-colombo/trabalhos-C/tree/main/trabalhoPCD" target="_blank" class="projeto-btn">🐙 GitHub</a>
-                </div>
-            </div>
-
           </div>
       </div>
     </section>
   
-  
+    <section id="certificacoes" class="layout-menu">
+      <h2 class="titulos-menu">Certificações e Formações</h2>
+      
+      <div class="certificacoes-container">
+          <div class="cert-provider">
+              <div class="provider-header">
+                <i class="fa-brands fa-ibm provider-icon"></i>
+                <h3 class="provider-title">IBM</h3>
+              </div>
+              
+              <div class="cert-specialization">
+                  <h4 class="spec-title">Specialization: DevOps, Cloud, and Agile Foundations</h4>
+                  <p class="spec-desc">Formação completa conectando a cultura ágil, automação de entregas (DevOps) e infraestrutura em nuvem.</p>
+                  
+                  <ul class="cert-cursos-lista">
+                      <li><i class="fa-solid fa-check-circle"></i> Introduction to Agile Development and Scrum</li>
+                      <li><i class="fa-solid fa-check-circle"></i> Introduction to DevOps</li>
+                      <li><i class="fa-solid fa-check-circle"></i> Introduction to Cloud Computing</li>
+                  </ul>
+                  <a href="#" target="_blank" class="projeto-btn cert-link">Ver Credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+
+          <div class="cert-provider">
+            <div class="provider-header">
+              <i class="fa-brands fa-google provider-icon"></i>
+              <h3 class="provider-title">Google</h3>
+            </div>
+            
+            <div class="cert-specialization">
+                <h4 class="spec-title">Professional Certificate: IT Support & Cloud</h4>
+                <p class="spec-desc">Fundamentos de infraestrutura, redes, sistemas operacionais e segurança da informação.</p>
+                
+                <ul class="cert-cursos-lista">
+                    <li><i class="fa-solid fa-check-circle"></i> The Bits and Bytes of Computer Networking</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Operating Systems and You: Becoming a Power User</li>
+                    <li><i class="fa-solid fa-check-circle"></i> System Administration and IT Infrastructure Services</li>
+                </ul>
+                <a href="#" target="_blank" class="projeto-btn cert-link">Ver Credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+      </div>
+    </section>
+
     <section id="competencias" class="layout-menu">
     <h2 class="titulos-menu">Competências Técnicas</h2>
     
       <div class="competencias-container">
+        
         <div class="competencia-item">
             <div class="comp-header">
-                <span class="comp-icon">⚙️</span>
-                <h3 class="comp-titulo">Engenharia de Software</h3>
+                <span class="comp-icon">☁️</span>
+                <h3 class="comp-titulo">DevOps & Cloud Computing</h3>
             </div>
             <ul class="comp-lista">
-                <li data-info="Formação: UC San Diego e Hashtag Treinamentos">
-                    <strong>Java & Python:</strong> POO e sistemas modulares.
+                <li data-info="Conhecimento em provedores como IBM Cloud e Google Cloud (IaaS, PaaS, SaaS).">
+                    <strong>Nuvem:</strong> Arquitetura e Infraestrutura Escalável.
                 </li>
-                <li data-info="Sistemas distribuídos e gRPC (Projeto PIR-Land)">
-                    <strong>Arquitetura de Software:</strong> Sistemas distribuídos, gRPC e persistência.
+                <li data-info="Automação do ciclo de vida de software, garantindo entregas contínuas.">
+                    <strong>Práticas DevOps:</strong> CI/CD, Automação e Integração.
                 </li>
-                <li data-info="Desenvolvimento de compiladores (Flex/Bison) em C++">
-                    <strong>Compiladores:</strong> Autômatos e análise sintática.
-                </li>
-            </ul>
-        </div>
-
-        <div class="competencia-item">
-            <div class="comp-header">
-                <span class="comp-icon">📊</span>
-                <h3 class="comp-titulo">Dados & IA</h3>
-            </div>
-            <ul class="comp-lista">
-                <li data-info="Pesquisa(IC): Reconhecimento facial em tempo real">
-                    <strong>Deep Learning e Visão Computacional:</strong> Redes Neurais Convolucionais (CNN).
-                </li>
-                <li data-info="Pesquisa(IC): Aplicações de Séries Geométricas">
-                    <strong>Geoestatística:</strong> Análise e visualização de dados espaciais.
-                </li>
-                <li data-info="Publicado no VI COBICET 2025">
-                    <strong>Simulação:</strong> Modelagem de fenômenos físicos e convergência.
-                </li>
-            </ul>
-        </div>
-
-        <div class="competencia-item">
-            <div class="comp-header">
-                <span class="comp-icon">🌐</span>
-                <h3 class="comp-titulo">Infraestrutura & Redes</h3>
-            </div>
-            <ul class="comp-lista">
-                <li data-info="Especialização em Redes pelo Google">
-                    <strong>Protocolos:</strong> Sockets TCP/IP e transição para IPv6.
-                </li>
-                <li data-info="Certificação CommandLine Basics (Coursera)">
-                    <strong>Linux:</strong> Gestão de servidores via Bash e permissões.
-                </li>
-                <li data-info="Certificado Profissional de Suporte do Google">
-                    <strong>Troubleshooting:</strong> Manutenção e segurança de infraestrutura.
+                <li data-info="Certificação IBM e aplicação em projetos reais.">
+                    <strong>Metodologias Ágeis:</strong> Scrum e Cultura Ágil.
                 </li>
             </ul>
         </div>
@@ -246,20 +220,57 @@
         <div class="competencia-item">
             <div class="comp-header">
                 <span class="comp-icon">💻</span>
-                <h3 class="comp-titulo">Desenvolvimento Web & GUI</h3>
+                <h3 class="comp-titulo">Engenharia de Software</h3>
             </div>
             <ul class="comp-lista">
-                <li data-info="Curso UC Davis: Lógica e manipulação de DOM e próprio portfólio">
-                    <strong>JavaScript:</strong> Scripts interativos e manipulação de eventos.
+                <li data-info="Experiência em desenvolvimento backend, automação e interfaces (Tkinter/Flask).">
+                    <strong>Linguagens:</strong> Python, Java, C/C++ e JavaScript.
                 </li>
-                <li data-info="Criação de jogos e GUIs personalizadas com Pygame, PyQt5 e tkinter">
-                    <strong>Interfaces:</strong> Criação de GUIs e motores de jogos.
+                <li data-info="Design de sistemas distribuídos e comunicação via Sockets/gRPC.">
+                    <strong>Arquitetura:</strong> Sistemas Distribuídos e APIs.
                 </li>
-                <li data-info="Renderização e filtragem de dados geográficos em tempo real">
-                    <strong>Data Visualization:</strong> Dashboards e visualização de dados.
+                <li data-info="Desenvolvimento de compiladores (Flex/Bison) e análise sintática.">
+                    <strong>Ciência da Computação:</strong> Autômatos, Estrutura de Dados e Compiladores.
                 </li>
             </ul>
         </div>
+
+        <div class="competencia-item">
+            <div class="comp-header">
+                <span class="comp-icon">🧠</span>
+                <h3 class="comp-titulo">Dados, IA & Segurança</h3>
+            </div>
+            <ul class="comp-lista">
+                <li data-info="Pesquisa ativa em IC para reconhecimento facial em tempo real.">
+                    <strong>Machine Learning:</strong> Deep Learning e CNNs.
+                </li>
+                <li data-info="Desenvolvimento de biblioteca Python baseada em tese de doutorado.">
+                    <strong>Análise Espacial:</strong> Geoestatística e Visualização de Dados.
+                </li>
+                <li data-info="Estudos avançados em OWASP, Malware e modelos de segurança (DevSecOps).">
+                    <strong>Cybersecurity:</strong> Segurança da Informação e DevSecOps.
+                </li>
+            </ul>
+        </div>
+
+        <div class="competencia-item">
+            <div class="comp-header">
+                <span class="comp-icon">🖥️</span>
+                <h3 class="comp-titulo">Infraestrutura & SO</h3>
+            </div>
+            <ul class="comp-lista">
+                <li data-info="Administração via Bash, controle de permissões e gestão de servidores.">
+                    <strong>Linux & Terminal:</strong> Bash Scripting e Administração.
+                </li>
+                <li data-info="Experiência prática em manutenção de infraestruturas locais e virtuais.">
+                    <strong>Troubleshooting:</strong> Suporte de TI e Manutenção de Sistemas.
+                </li>
+                <li data-info="Especialização pelo Google e projetos de rede peer-to-peer.">
+                    <strong>Redes:</strong> Protocolos TCP/IP, IPv6 e Sockets.
+                </li>
+            </ul>
+        </div>
+
       </div>
     </section>    
     
@@ -271,12 +282,12 @@
               📧 rafaelcolombomiranda@gmail.com
           </a>
           <a class="link-contato" href="https://api.whatsapp.com/send?phone=5527999095716" target="_blank">
-               📱 (27) 9.9909-5716
+                📱 (27) 9.9909-5716
           </a>
       </div>
     </section>
   
-    <div id="alerta-copy" class="alerta-copy">E-mail copiado!</div>
+    <div id="alerta-copy" class="alerta-copy">E-mail copiado com sucesso!</div>
   
     <script src="script.js"></script>
     
