@@ -621,6 +621,70 @@ body {
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
 }
 
+/* SESSÃO: ACCORDION DE CERTIFICAÇÕES */
+.accordion-item {
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: var(--secundaria);
+  padding: 15px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: rgba(79, 70, 229, 0.15);
+  color: var(--primaria);
+}
+
+.accordion-header .seta {
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+}
+
+/* Roda a setinha quando o accordion estiver aberto */
+.accordion-header.active .seta {
+  transform: rotate(180deg);
+}
+
+/* Estilo para o curso que não é clicável (Standalone) */
+.accordion-header.standalone {
+  cursor: default;
+  color: var(--claro);
+  font-weight: 500;
+}
+.accordion-header.standalone:hover {
+  background: transparent;
+  color: var(--claro);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.accordion-content .cert-cursos-lista {
+  padding: 15px 15px 15px 40px; /* Dá um recuo extra para os cursos */
+  margin-bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 /* Ajustes Mobile */
 @media (max-width: 768px) {
   .menu { gap: 1rem; }
