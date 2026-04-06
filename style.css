@@ -661,17 +661,6 @@ body {
   transform: rotate(180deg);
 }
 
-/* Estilo para o curso que não é clicável (Standalone) */
-.accordion-header.standalone {
-  cursor: default;
-  color: var(--claro);
-  font-weight: 500;
-}
-.accordion-header.standalone:hover {
-  background: transparent;
-  color: var(--claro);
-}
-
 .accordion-content {
   max-height: 0;
   overflow: hidden;
