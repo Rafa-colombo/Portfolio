@@ -98,9 +98,7 @@ accordions.forEach(acc => {
   });
 });
 
-// ==========================================
 // 4. LÓGICA DO SISTEMA DE IDIOMAS (PT/EN)
-// ==========================================
 const btnPt = document.getElementById('btn-pt');
 const btnEn = document.getElementById('btn-en');
 const body = document.body;
