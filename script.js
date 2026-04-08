@@ -97,3 +97,49 @@ accordions.forEach(acc => {
     }
   });
 });
+
+// ==========================================
+// 4. LÓGICA DO SISTEMA DE IDIOMAS (PT/EN)
+// ==========================================
+const btnPt = document.getElementById('btn-pt');
+const btnEn = document.getElementById('btn-en');
+const body = document.body;
+
+btnPt.addEventListener('click', () => {
+    body.classList.remove('lang-en');
+    btnPt.classList.add('active');
+    btnEn.classList.remove('active');
+});
+
+btnEn.addEventListener('click', () => {
+    body.classList.add('lang-en');
+    btnEn.classList.add('active');
+    btnPt.classList.remove('active');
+});
+
+
+// 5. LÓGICA DO TOGGLE "SOBRE MIM"
+const btnTech = document.getElementById('btn-tech');
+const btnPessoal = document.getElementById('btn-pessoal');
+const textoTech = document.getElementById('texto-tech');
+const textoPessoal = document.getElementById('texto-pessoal');
+
+btnTech.addEventListener('click', () => {
+    // Atualiza botões
+    btnTech.classList.add('active');
+    btnPessoal.classList.remove('active');
+    
+    // Atualiza textos
+    textoTech.classList.add('ativo');
+    textoPessoal.classList.remove('ativo');
+});
+
+btnPessoal.addEventListener('click', () => {
+    // Atualiza botões
+    btnPessoal.classList.add('active');
+    btnTech.classList.remove('active');
+    
+    // Atualiza textos
+    textoPessoal.classList.add('ativo');
+    textoTech.classList.remove('ativo');
+});
