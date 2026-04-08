@@ -22,20 +22,28 @@
     
     <nav class="navegacao">
       <ul class="menu">
-          <li><a href="#inicio" class="menu-link">Início</a></li>
-          <li><a href="#sobre" class="menu-link">Sobre</a></li>
-          <li><a href="#experiencias" class="menu-link">Experiências</a></li>
-          <li><a href="#projetos" class="menu-link">Projetos</a></li>
-          <li><a href="#certificacoes" class="menu-link">Certificações</a></li>
+          <li><a href="#inicio" class="menu-link"><span class="txt-pt">Início</span><span class="txt-en">Home</span></a></li>
+          <li><a href="#sobre" class="menu-link"><span class="txt-pt">Sobre</span><span class="txt-en">About</span></a></li>
+          <li><a href="#experiencias" class="menu-link"><span class="txt-pt">Experiências</span><span class="txt-en">Experience</span></a></li>
+          <li><a href="#projetos" class="menu-link"><span class="txt-pt">Projetos</span><span class="txt-en">Projects</span></a></li>
+          <li><a href="#certificacoes" class="menu-link"><span class="txt-pt">Certificações</span><span class="txt-en">Certs</span></a></li>
           <li><a href="#competencias" class="menu-link">Skills</a></li>
-          <li><a href="#contato" class="menu-link">Contato</a></li>
+          <li><a href="#contato" class="menu-link"><span class="txt-pt">Contato</span><span class="txt-en">Contact</span></a></li>
       </ul>  
+
+      <div class="lang-switcher">
+          <button id="btn-pt" class="lang-btn active" title="Português"><img src="https://flagcdn.com/w20/br.png" alt="PT-BR"></button>
+          <button id="btn-en" class="lang-btn" title="English"><img src="https://flagcdn.com/w20/us.png" alt="EN-US"></button>
+      </div>
     </nav>
   
     <main id="inicio" class="cabecalho">
             <img src="./img/DSC04186.png" alt="Foto de Rafael" class="Foto-perfil" loading="lazy">
             <h1 class="eu">Rafael Colombo Miranda</h1>
-            <p class="ocupacao">Engenharia de Computação | Cloud & DevOps</p>
+            <p class="ocupacao">
+                <span class="txt-pt">Engenharia de Computação | Cloud & DevOps</span>
+                <span class="txt-en">Computer Engineering | Cloud & DevOps</span>
+            </p>
   
             <div class="links-cabecalho">
               <a href="https://www.linkedin.com/in/rafaelcolombomiranda" target="_blank" class="link-social linkedin" aria-label="Meu perfil no LinkedIn">
@@ -51,30 +59,62 @@
     </main>
   
     <section id="sobre" class="layout-menu">
-      <h2 class="titulos-menu">Sobre mim</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Sobre mim</span><span class="txt-en">About me</span></h2>
       <div class="sobre-caixa">
-          <p class="sobre-paragrafo">
-            Sou estudante de Engenharia da Computação na UTFPR, apaixonado por conectar a teoria acadêmica à aplicabilidade real do mercado. 
-            Tenho forte foco em <strong>Desenvolvimento de Software, Python, DevOps/DevSecOps e Infraestrutura em Nuvem</strong>. 
-            Em paralelo, desenvolvo pesquisas científicas aplicando Inteligência Artificial (Machine Learning e CNNs) e Estatística.
-            Atualmente atuo em suporte e infraestrutura de TI em ambiente de laboratório de pesquisa, buscando sempre desafios que me permitam unir a cultura ágil, o desenvolvimento robusto e tecnologias escaláveis.
-          </p>
+          
+          <div class="sobre-toggle-container">
+              <button id="btn-tech" class="sobre-toggle-btn active">
+                  <i class="fa-solid fa-laptop-code"></i> <span class="txt-pt">Foco Profissional</span><span class="txt-en">Professional</span>
+              </button>
+              <button id="btn-pessoal" class="sobre-toggle-btn">
+                  <i class="fa-solid fa-user"></i> <span class="txt-pt">Lado Pessoal</span><span class="txt-en">Personal Side</span>
+              </button>
+          </div>
+
+          <div id="texto-tech" class="sobre-conteudo ativo">
+              <p class="sobre-paragrafo">
+                  <span class="txt-pt">
+                      Sou estudante de Engenharia da Computação na UTFPR, apaixonado por conectar a teoria acadêmica à aplicabilidade real do mercado. 
+                      Tenho forte foco em <strong>Desenvolvimento de Software, Python, DevOps/DevSecOps e Infraestrutura em Nuvem</strong>. 
+                      Em paralelo, desenvolvo pesquisas científicas aplicando Inteligência Artificial (Machine Learning e CNNs) e Estatística.
+                      Atualmente atuo em suporte e infraestrutura de TI em ambiente de laboratório de pesquisa, buscando sempre desafios que me permitam unir a cultura ágil, o desenvolvimento robusto e tecnologias escaláveis.
+                  </span>
+                  <span class="txt-en">
+                      I am a Computer Engineering student at UTFPR, passionate about connecting academic theory to real-world applications. 
+                      My strong focus lies in <strong>Software Development, Python, DevOps/DevSecOps, and Cloud Infrastructure</strong>. 
+                      Simultaneously, I conduct scientific research applying Artificial Intelligence (Machine Learning and CNNs) and Statistics.
+                      I currently work in IT support and infrastructure within a research lab environment, always seeking challenges that allow me to combine agile culture, robust development, and scalable technologies.
+                  </span>
+              </p>
+          </div>
+
+          <div id="texto-pessoal" class="sobre-conteudo">
+              <p class="sobre-paragrafo">
+                  <span class="txt-pt">
+                      Além das telas e dos códigos, sou um capixaba de 26 anos vivendo no Paraná. Minha trajetória não é feita apenas de computadores: já atuei no setor de serviços, em bares e restaurantes, onde aprendi na prática o valor da comunicação clara, da resiliência e do trabalho em equipe sob alta pressão. Gosto de ajudar e compartilhar conhecimento, o que me levou a atuar como monitor acadêmico por diversos períodos. Sou movido por desafios constantes, aprendizado contínuo e pela vontade de construir soluções que impactem positivamente a vida das pessoas.
+                  </span>
+                  <span class="txt-en">
+                      Beyond screens and code, I'm a 26-year-old from Espírito Santo living in Paraná. My journey isn't just about computers: I've worked in the service industry, in bars and restaurants, where I learned firsthand the value of clear communication, resilience, and teamwork under high pressure. I enjoy helping others and sharing knowledge, which led me to serve as an academic tutor for several semesters. I'm driven by constant challenges, continuous learning, and the desire to build solutions that positively impact people's lives.
+                  </span>
+              </p>
+          </div>
+
       </div>
     </section>
 
     <section id="experiencias" class="layout-menu">
-      <h2 class="titulos-menu">Experiência Profissional e Acadêmica</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Experiência Profissional e Acadêmica</span><span class="txt-en">Professional & Academic Experience</span></h2>
       <div class="experiencias-container">
           
           <div class="exp-card">
               <h3 class="exp-cargo">Estagiário em Infraestrutura e Suporte Técnico</h3>
-              <p class="exp-meta"><i class="fa-solid fa-building-columns"></i> PPGI/UFES | <i class="fa-regular fa-calendar"></i> 2026 - Atual</p>
+              <p class="exp-meta"><i class="fa-solid fa-building-columns"></i> PPGI/UFES | <i class="fa-regular fa-calendar"></i> <span class="txt-pt">2026 - Atual</span><span class="txt-en">2026 - Present</span></p>
               <p class="exp-desc">Gerenciamento de serviços internos do laboratório e suporte em TI. Reprodução e validação de exercícios práticos para a disciplina de Segurança Computacional, além de apoio técnico na elaboração de materiais literários na área.</p>
           </div>
 
           <div class="exp-card">
               <h3 class="exp-cargo">Pesquisador (Iniciação Científica)</h3>
-              <p class="exp-meta"><i class="fa-solid fa-flask"></i> UTFPR | <i class="fa-regular fa-calendar"></i> 2024 - Atual</p>
+              <p class="exp-meta"><i class="fa-solid fa-flask"></i> UTFPR | <i class="fa-regular fa-calendar"></i> <span class="txt-pt">2024 - Atual</span><span class="txt-en">2024 - Present</span></p>
               <p class="exp-desc">Desenvolvimento de pesquisas com Inteligência Artificial, focando em Redes Neurais Convolucionais (CNNs) para reconhecimento de emoções e criação de bibliotecas Python open-source para análise e simulação de dados espaciais (Geoestatística).</p>
           </div>
           
@@ -99,7 +139,7 @@
     </section>
   
     <section id="projetos" class="layout-menu">
-      <h2 class="titulos-menu">Projetos em Destaque</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Projetos em Destaque</span><span class="txt-en">Featured Projects</span></h2>
         <div class="projetos-destaque">
           
           <div class="projetos-card card-destaque">
@@ -111,7 +151,7 @@
               </p>
               <div class="botoes-projeto">
                 <a href="https://github.com/Rafa-colombo/APLICACOES-DE-SERIES-GEOMETRICAS" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="https://www.even3.com.br/anais/congresso-brasileiro-interdisciplinar-ciencia-tecnologia/1198816-aplicacoes-de-series-geometricas-utilizando-programacao-em-python" target="_blank" class="projeto-btn"><i class="fa-solid fa-globe"></i> Publicação</a>
+                <a href="https://www.even3.com.br/anais/congresso-brasileiro-interdisciplinar-ciencia-tecnologia/1198816-aplicacoes-de-series-geometricas-utilizando-programacao-em-python" target="_blank" class="projeto-btn"><i class="fa-solid fa-globe"></i> <span class="txt-pt">Publicação</span><span class="txt-en">Publication</span></a>
               </div>
           </div>
   
@@ -123,7 +163,7 @@
               </p>
               <div class="botoes-projeto">
                 <a href="https://github.com/Rafa-colombo/IC" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                <span class="projeto-btn status-dev">🚧 Em desenvolvimento</span>
+                <span class="projeto-btn status-dev">🚧 <span class="txt-pt">Em desenvolvimento</span><span class="txt-en">In development</span></span>
               </div>
           </div>
   
@@ -135,12 +175,12 @@
               </p>
               <div class="botoes-projeto">
                 <a href="https://github.com/Rafa-colombo/Geoestatistics" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                <span class="projeto-btn status-dev">🚧 Em desenvolvimento</span>
+                <span class="projeto-btn status-dev">🚧 <span class="txt-pt">Em desenvolvimento</span><span class="txt-en">In development</span></span>
               </div>
           </div>
       </div>
   
-      <h2 class="titulos-menu" style="margin-top: 4rem;">Outros Projetos</h2>
+      <h2 class="titulos-menu" style="margin-top: 4rem;"><span class="txt-pt">Outros Projetos</span><span class="txt-en">Other Projects</span></h2>
   
       <div class="carrossel-container">
           <div class="projetos-carrossel" id="carrossel">
@@ -152,20 +192,9 @@
                     Aplicação full-stack para análise de sentimentos em tempo real com tratamento avançado de erros.</p>
                   <div class="botoes-projeto">
                     <a href="https://github.com/Rafa-colombo/projeto-final-IBM-AIFLask" target="_blank" class="projeto-btn"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <!--a href="https://rafa-colombo.github.io/projeto-final-IBM-AIFLask" target="_blank" class="projeto-btn"><i class="fa-solid fa-globe"></i> Web App</a-->
                   </div>
               </div>
-<!--
-              <div class="projetos-card">
-                  <h3 class="titulo-projeto">MeuAtleta</h3>
-                  <p class="info-projeto">
-                    <span class="tag-projeto">Web Mobile-First</span> <span class="tag-projeto">ReactJS</span> <span class="tag-projeto">Full-Stack</span><br><br>
-                    Plataforma para gestão de academias e associações esportivas, com controle hierárquico de usuários.</p>
-                  <div class="botoes-projeto">
-                    <a href="#" class="projeto-btn"><i class="fa-solid fa-lock"></i> Privado/WIP</a>
-                  </div>
-              </div>
--->
+
               <div class="projetos-card">
                   <h3 class="titulo-projeto">PIR Land</h3>
                   <p class="info-projeto">
@@ -230,7 +259,7 @@
     </section>
   
     <section id="certificacoes" class="layout-menu">
-      <h2 class="titulos-menu">Certificações e Formações</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Certificações e Formações</span><span class="txt-en">Certifications & Education</span></h2>
       
       <div class="certificacoes-container">
           <div class="cert-provider">
@@ -245,7 +274,8 @@
                   </h4>
 
                   <p class="spec-desc" style="margin-bottom: 1.5rem;">
-                      Formação avançada que une a cultura ágil ao ciclo completo de desenvolvimento, capacitando em práticas práticas de DevOps, DevSecOps e gestão de infraestrutura escalável em Cloud.
+                      <span class="txt-pt">Formação avançada que une a cultura ágil ao ciclo completo de desenvolvimento, capacitando em práticas de DevOps, DevSecOps e gestão de infraestrutura escalável em Cloud.</span>
+                      <span class="txt-en">Advanced training connecting agile culture to the complete development cycle, empowering practical skills in DevOps, DevSecOps, and scalable Cloud infrastructure management.</span>
                   </p>
                 
                   <div class="accordion-item">
@@ -277,12 +307,10 @@
                   </div>
 
                   <div class="accordion-item">
-                      <div style="display: flex; align-items: center; gap: 10px;">
+                      <div style="display: flex; align-items: center; gap: 10px; padding: 15px;">
                               <i class="fa-solid fa-check-circle" style="color: #10b981;"></i> Application Security for Developers and DevOps Professionals
                       </div>
                   </div>
-
-                  <!-- a href="#" target="_blank" class="projeto-btn cert-link" style="margin-top: 20px;">Ver Credencial <i class="fa-solid fa-arrow-up-right-from-square"></i></a -->
               </div>
           </div>
 
@@ -293,8 +321,8 @@
             </div>
             
             <div class="cert-specialization">
-                <h4 class="spec-title">Infraestrutura e Nuvem</h4>
-                <p class="spec-desc">Formações focadas em suporte técnico, redes e arquitetura cloud.</p>
+                <h4 class="spec-title"><span class="txt-pt">Infraestrutura e Nuvem</span><span class="txt-en">Infrastructure & Cloud</span></h4>
+                <p class="spec-desc"><span class="txt-pt">Formações focadas em suporte técnico, redes e arquitetura cloud.</span><span class="txt-en">Training focused on technical support, networking, and cloud architecture.</span></p>
                 
                 <ul class="cert-cursos-lista">
                     <li><i class="fa-solid fa-check-circle"></i> IT Support Professional Certificate </li>
@@ -307,12 +335,12 @@
           <div class="cert-provider">
             <div class="provider-header">
               <i class="fa-solid fa-graduation-cap provider-icon"></i>
-              <h3 class="provider-title">Linguagens e Algoritmos</h3>
+              <h3 class="provider-title"><span class="txt-pt">Linguagens e Algoritmos</span><span class="txt-en">Languages & Algorithms</span></h3>
             </div>
             
             <div class="cert-specialization">
-                <h4 class="spec-title">Programação e Web</h4>
-                <p class="spec-desc">Cursos complementares focados no domínio de backend, frontend e sistemas operacionais.</p>
+                <h4 class="spec-title"><span class="txt-pt">Programação e Web</span><span class="txt-en">Programming & Web</span></h4>
+                <p class="spec-desc"><span class="txt-pt">Cursos complementares focados no domínio de backend, frontend e sistemas operacionais.</span><span class="txt-en">Supplementary courses focused on backend, frontend, and operating systems mastery.</span></p>
                 
                 <ul class="cert-cursos-lista">
                     <li><i class="fa-solid fa-check-circle"></i> <strong>UC San Diego:</strong> Object Oriented Programming in Java </li>
@@ -333,54 +361,54 @@
         <div class="competencia-item">
             <div class="comp-header">
                 <span class="comp-icon">☁️</span>
-                <h3 class="comp-titulo">DevOps & Infraestrutura</h3>
+                <h3 class="comp-titulo"><span class="txt-pt">DevOps & Infraestrutura</span><span class="txt-en">DevOps & Infrastructure</span></h3>
             </div>
             <ul class="comp-lista">
-                <li data-info="Cloud Deploy, Architecture e Security."><strong>Cloud Computing:</strong> Google Cloud e IBM.</li>
-                <li data-info="CI/CD Pipelines, Automação e Git."><strong>DevOps/DevSecOps:</strong> Automação de Entregas.</li>
-                <li data-info="Linux Bash Scripting e Gestão de Servidores."><strong>SO & Redes:</strong> Linux e Protocolos TCP/IP.</li>
+                <li data-info="Cloud Deploy, Architecture e Security."><strong>Cloud Computing:</strong> Google Cloud & IBM.</li>
+                <li data-info="CI/CD Pipelines, Automação e Git."><strong>DevOps/DevSecOps:</strong> <span class="txt-pt">Automação de Entregas.</span><span class="txt-en">Delivery Automation.</span></li>
+                <li data-info="Linux Bash Scripting e Gestão de Servidores."><strong>SO & Redes:</strong> Linux & Protocolos TCP/IP.</li>
             </ul>
         </div>
 
         <div class="competencia-item">
             <div class="comp-header">
                 <span class="comp-icon">💻</span>
-                <h3 class="comp-titulo">Engenharia de Software</h3>
+                <h3 class="comp-titulo"><span class="txt-pt">Engenharia de Software</span><span class="txt-en">Software Engineering</span></h3>
             </div>
             <ul class="comp-lista">
                 <li data-info="Sistemas Distribuídos e Sockets."><strong>Backend:</strong> Python, Java, C/C++.</li>
-                <li data-info="HTML, CSS, ReactJS e Visualização de Dados."><strong>Frontend:</strong> JavaScript e Interfaces Gráficas.</li>
-                <li data-info="POO, Estruturas de Dados e Arquitetura."><strong>Arquitetura:</strong> Design de Software e APIs RESTful.</li>
+                <li data-info="HTML, CSS, ReactJS e Visualização de Dados."><strong>Frontend:</strong> JavaScript <span class="txt-pt">& Interfaces Gráficas.</span><span class="txt-en">& GUIs.</span></li>
+                <li data-info="POO, Estruturas de Dados e Arquitetura."><strong>Arquitetura:</strong> <span class="txt-pt">Design de Software e APIs RESTful.</span><span class="txt-en">Software Design & RESTful APIs.</span></li>
             </ul>
         </div>
 
         <div class="competencia-item">
             <div class="comp-header">
                 <span class="comp-icon">🧠</span>
-                <h3 class="comp-titulo">Dados & Metodologias</h3>
+                <h3 class="comp-titulo"><span class="txt-pt">Dados & Metodologias</span><span class="txt-en">Data & Methodologies</span></h3>
             </div>
             <ul class="comp-lista">
                 <li data-info="Deep Learning e Visão Computacional (CNNs)."><strong>Inteligência Artificial:</strong> Machine Learning.</li>
-                <li data-info="Modelagem Computacional e Geoestatística."><strong>Ciência de Dados:</strong> Estatística Aplicada.</li>
-                <li data-info="Agile Software Development, Scrum e Gestão de Backlogs."><strong>Agile:</strong> Scrum e Gestão de Projetos.</li>
+                <li data-info="Modelagem Computacional e Geoestatística."><strong>Ciência de Dados:</strong> <span class="txt-pt">Estatística Aplicada.</span><span class="txt-en">Applied Statistics.</span></li>
+                <li data-info="Agile Software Development, Scrum e Gestão de Backlogs."><strong>Agile:</strong> <span class="txt-pt">Scrum e Gestão de Projetos.</span><span class="txt-en">Scrum & Project Management.</span></li>
             </ul>
         </div>
       </div>
     </section>    
 
     <section id="softskills" class="layout-menu" style="padding-top: 2rem;">
-      <h2 class="titulos-menu">Soft Skills & Idiomas</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Soft Skills & Idiomas</span><span class="txt-en">Soft Skills & Languages</span></h2>
       <div class="soft-skills-container">
-          <div class="soft-skill-badge"><i class="fa-solid fa-brain"></i> Pensamento analítico e resolução de problemas </div>
-          <div class="soft-skill-badge"><i class="fa-solid fa-comments"></i> Comunicação técnica e trabalho em equipe </div>
-          <div class="soft-skill-badge"><i class="fa-solid fa-rocket"></i> Proatividade e aprendizado contínuo </div>
-          <div class="soft-skill-badge"><i class="fa-solid fa-layer-group"></i> Organização e adaptação a ambientes dinâmicos </div>
-          <div class="soft-skill-badge"><i class="fa-solid fa-language"></i> Inglês (B2) </div>
+          <div class="soft-skill-badge"><i class="fa-solid fa-brain"></i> <span class="txt-pt">Pensamento analítico e resolução de problemas</span><span class="txt-en">Analytical thinking & Problem solving</span> </div>
+          <div class="soft-skill-badge"><i class="fa-solid fa-comments"></i> <span class="txt-pt">Comunicação técnica e trabalho em equipe</span><span class="txt-en">Technical communication & Teamwork</span> </div>
+          <div class="soft-skill-badge"><i class="fa-solid fa-rocket"></i> <span class="txt-pt">Proatividade e aprendizado contínuo</span><span class="txt-en">Proactivity & Continuous learning</span> </div>
+          <div class="soft-skill-badge"><i class="fa-solid fa-layer-group"></i> <span class="txt-pt">Organização e adaptação a ambientes dinâmicos</span><span class="txt-en">Organization & Adaptability to dynamic environments</span> </div>
+          <div class="soft-skill-badge"><i class="fa-solid fa-language"></i> <span class="txt-pt">Inglês</span><span class="txt-en">English</span> (B2) </div>
       </div>
     </section>
     
     <section id="contato" class="contato">
-      <h2 class="titulos-menu">Contato</h2>
+      <h2 class="titulos-menu"><span class="txt-pt">Contato</span><span class="txt-en">Contact</span></h2>
       <div class="links-contato">
           <p style="color: var(--claro); margin-bottom: 10px;">Vitória - ES </p>
           <a class="link-contato" href="#" id="email-link">📧 rafaelcolombomiranda@gmail.com</a>
@@ -388,7 +416,7 @@
       </div>
     </section>
   
-    <div id="alerta-copy" class="alerta-copy">E-mail copiado com sucesso!</div>
+    <div id="alerta-copy" class="alerta-copy"><span class="txt-pt">E-mail copiado com sucesso!</span><span class="txt-en">E-mail copied successfully!</span></div>
     <script src="script.js"></script>
   </body>
 </html>
