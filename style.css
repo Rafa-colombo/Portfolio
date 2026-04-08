@@ -674,6 +674,114 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+/* SISTEMA DE IDIOMAS (i18n)
+ Oculta o inglês por padrão */
+.txt-en {
+  display: none;
+}
+
+/* Quando o body tem a classe lang-en, inverte a lógica */
+body.lang-en .txt-pt {
+  display: none !important;
+}
+body.lang-en .txt-en {
+  display: inline !important; /* Use inline para spans no meio de textos */
+}
+
+/* Estilo das Bandeiras na Navegação */
+.navegacao {
+  display: flex;
+  justify-content: space-between; /* Ajusta o nav para separar menu e bandeiras */
+  align-items: center;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--vidro);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.3s ease;
+  opacity: 0.5; /* Desativado fica mais transparente */
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0.8;
+}
+
+.lang-btn.active {
+  opacity: 1;
+  border-color: var(--primaria);
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.4);
+}
+
+.lang-btn img {
+  border-radius: 2px;
+  display: block;
+}
+
+/* TOGGLE: SOBRE MIM (Profissional / Pessoal) */
+.sobre-toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.sobre-toggle-btn {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--claro);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sobre-toggle-btn:hover {
+  background: rgba(79, 70, 229, 0.2);
+}
+
+.sobre-toggle-btn.active {
+  background: var(--primaria);
+  border-color: var(--secundaria);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+.sobre-conteudo {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sobre-conteudo.ativo {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste mobile para a nav */
+@media (max-width: 768px) {
+  .navegacao {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 /* Ajustes Mobile */
 @media (max-width: 768px) {
   .menu { gap: 1rem; }
